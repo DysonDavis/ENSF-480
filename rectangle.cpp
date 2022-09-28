@@ -23,6 +23,21 @@ const double Rectangle::getSideA() const{
 const double Rectangle::getSideB() const{
     return this->side_b;
 }
+void Rectangle::set_side_a(const int& a)
+{
+    this->side_a = a;
+}
+void Rectangle::set_side_b(const int &b)
+{
+    this->side_b = b;
+}
+
 void Rectangle::display(){
-    cout <<"\n Nice!";
+    cout << "\nShape Name: " << Shape::shapeName;
+    cout << "\nX-coordinate: " << Shape::origin.get_x();
+    cout << "\nY-coordinate: " << Shape::origin.get_y();
+    cout << "\nSide a: " << getSideA();
+    cout << "\nSide b: " << getSideB();
+    cout << "\nArea: " << area();
+    cout << "\nPerimeter: " << perimeter();
 }

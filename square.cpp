@@ -21,10 +21,10 @@ const double Square::getSideA() const{
     return this->side_a;
 }
 void Square::display(){
-    cout << "Shape Name: ";
-    cout << "X-coordinate: ";
-    cout << "Y-coordinate: ";
-    cout << "Side a: ";
-    cout << "Area: ";
-    cout << "Perimeter: ";
+    cout << "\nShape Name: " << Shape::shapeName;
+    cout << "\nX-coordinate: " << Shape::origin.get_x();
+    cout << "\nY-coordinate: " << Shape::origin.get_y();
+    cout << "\nSide a: " << getSideA();
+    cout << "\nArea: " << area();
+    cout << "\nPerimeter: " << perimeter();
 }

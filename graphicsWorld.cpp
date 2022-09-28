@@ -4,8 +4,12 @@
 
 #include <iostream>
 #include "graphicsWorld.h"
-#include "shape.cpp"
-#include "point.cpp"
+#include "shape.h"
+#include "point.h"
+#include "square.h"
+#include "rectangle.h"
+
+using namespace std;
 
 void GraphicsWorld::run(){
 #if 1 // Change 0 to 1 to test Point
@@ -19,13 +23,13 @@ void GraphicsWorld::run(){
     << Point::distance(m, n);
 #endif // end of block to test Point
     
-#if 0 // Change 0 to 1 to test Square
+#if 1 // Change 0 to 1 to test Square
     cout << "\n\nTesting Functions in class Square:" <<endl;
     Square s(5, 7, 12, "SQUARE - S");
     s.display();
 #endif // end of block to test Square
 
-#if 0 // Change 0 to 1 to test Rectangle
+#if 1 // Change 0 to 1 to test Rectangle
     cout << "\nTesting Functions in class Rectangle:"; Rectangle a(5, 7, 12, 15, "RECTANGLE A"); a.display();
     Rectangle b(16 , 7, 8, 9, "RECTANGLE B"); b.display();
     double d = a.distance(b);
@@ -50,7 +54,7 @@ void GraphicsWorld::run(){
     cout << "\nIf it doesn't there is a problem with your assignment operator.\n" << endl; rec3.display();
 #endif // end of block to test Rectangle
     
-#if 0 // Change 0 to 1 to test using array of pointer and polymorphism
+#if 1 // Change 0 to 1 to test using array of pointer and polymorphism
     cout << "\nTesting array of pointers and polymorphism:" <<endl;
     Shape* sh[4];
     sh[0] = &s;

@@ -14,6 +14,8 @@ public:
     const double perimeter() const;
     const double getSideA() const;
     const double getSideB() const;
+    void set_side_a(const int &a);
+    void set_side_b(const int &b);
     void display();
 private:
     double side_b;
