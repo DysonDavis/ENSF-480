@@ -4,6 +4,7 @@
 
 #include "point.h"
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 using namespace std;
 
@@ -38,8 +39,8 @@ const int Point::counter() const{
 }
 
 void Point::display(){
-    cout << "\nX-coordinate: %f\n" << this->get_x();
-    cout << "Y-coordinate: %f\n" << this->get_y();
+    cout << "\nX-coordinate: " << this->get_x();
+    cout << "\nY-coordinate: " << this->get_y();
 }
 
 const double Point::distance(Point& a){

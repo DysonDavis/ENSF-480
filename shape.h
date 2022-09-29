@@ -6,10 +6,11 @@
 #define SHAPE_H
 
 #include "point.h"
+#include <string>
 
 class Shape{
 public:
-    Shape(double a, double b, char* name);
+    Shape(double a, double b, std::string name);
     ~Shape();
     const Point& getOrigin() const;
     const char* getName() const;

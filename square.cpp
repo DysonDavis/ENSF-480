@@ -5,9 +5,10 @@
 #include "square.h"
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 
-Square::Square(double a, double b, double side, char* name): Shape(a, b, name){
+Square::Square(double a, double b, double side, string name): Shape(a, b, name){
     side_a = side;
 }
 const double Square::area() const{

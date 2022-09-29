@@ -5,9 +5,10 @@
 #include "rectangle.h"
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 
-Rectangle::Rectangle(double a, double b, double side1, double side2, char* name): Square(a, b, side1, name){
+Rectangle::Rectangle(double a, double b, double side1, double side2, string name): Square(a, b, side1, name){
     side_b = side2;
 }
 

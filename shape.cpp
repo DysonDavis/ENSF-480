@@ -5,13 +5,17 @@
 #include "shape.h"
 #include <iostream>
 #include <cmath>
+#include <string>
+#include <stdio.h>
+#include <string.h>
 using namespace std;
 
-Shape::Shape(double a, double b, char* name): origin(a, b){
-    shapeName = name;
+Shape::Shape(double a, double b, string name): origin(a, b){
+    shapeName = new char[sizeof(name)];
+    strcpy(shapeName, name.c_str());
 }
 Shape::~Shape(){
-    
+    delete[] shapeName;
 }
 const Point& Shape::getOrigin() const{
     return origin;

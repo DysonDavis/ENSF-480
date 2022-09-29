@@ -6,10 +6,11 @@
 #define RECTANGLE_H
 
 #include "square.h"
+#include <string>
 
 class Rectangle : public Square{
 public:
-    Rectangle(double a, double b, double side1, double side2, char* name);
+    Rectangle(double a, double b, double side1, double side2, std::string name);
     const double area() const;
     const double perimeter() const;
     const double getSideA() const;

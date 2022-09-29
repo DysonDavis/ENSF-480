@@ -6,10 +6,11 @@
 #define SQUARE_H
 
 #include "shape.h"
+#include <string>
 
 class Square: public Shape{
 public:
-    Square(double a, double b, double side, char* name);
+    Square(double a, double b, double side, std::string name);
     const double area() const;
     const double perimeter() const;
     const double getSideA() const;
